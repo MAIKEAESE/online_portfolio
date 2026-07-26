@@ -1,94 +1,98 @@
-# Jiang Jiawei Research Evidence Brief
+# Jiawei Jiang | Research Evidence Brief
 
-Focus: embedded robotic actuation, board-level hardware implementation, and learning-based locomotion.
+> **Prospective MPhil Applicant** focused on wearable exoskeletons and embodied robotic systems.  
+> Specializing in **hardware-level actuator control (FOC)** and **learning-based bipedal locomotion (Isaac Sim/RL)** to bridge the sim-to-real gap.
 
-This page is a compact evidence index for research-oriented graduate outreach. It is not a full project report. The strongest evidence is listed first.
+### Core Proof Points
 
-## 1. Actuation and Embedded Control
+- **Low-level Actuation:** Designed and validated a PCB-level FOC motor-drive board using SPC1168, DRV8300, MOSFET power stage, and SVPWM-based control workflow.
+- **RL & Sim-to-Real:** Deployed bipedal locomotion training in Isaac Sim, tuning reward functions toward stable walking and slope traversal within a compressed project cycle.
+- **Hardware Reliability:** Hands-on experience in MCU / RK / RPi platform bring-up, power-path diagnosis, serial debugging, and board-level signal troubleshooting.
 
-**FOC Motor Drive Board for Compact Robotic Actuation**
+---
 
-Evidence:
-- [PCB layout](foc_motor_drive/foc_pcb_layout.png)
-- [Physical board photo](foc_motor_drive/foc_board_photo.jpg)
-- [12V / power validation photo](foc_motor_drive/power_validation_12v.jpg)
-- [Motor rotation demo](foc_motor_drive/foc_motor_rotation_demo.mp4)
+## 1. Actuation and Embedded Control: FOC Motor Drive Board
 
-Technical scope:
-- Three-phase motor-drive board for robotic actuation.
-- Power stage, current sampling, communication/protection circuitry, and PCB layout.
-- FOC control workflow involving SVPWM and Clarke-Park transforms.
-- Preliminary motor-rotation and power validation.
+![FOC PCB layout](assets/media/foc_pcb_layout.jpg)
 
-Technical value:
-- Demonstrates hands-on experience with compact actuation hardware, current sensing, embedded control loops, and actuator-level reliability.
-- This is the strongest hardware evidence in the portfolio and should be viewed as the main proof of low-level robotic actuation capability.
-
-## 2. Learning-Based Locomotion
-
-**Isaac Sim Bipedal Locomotion Training**
+![FOC physical board](assets/media/foc_board_photo.jpg)
 
 Evidence:
-- [Reward curves / training logs](isaac_sim_training/reward_curve.png)
-- [Training scene](isaac_sim_training/isaac_training_scene.png)
-- [Flat walking screenshot](isaac_sim_training/isaac_flat_walking.png)
+- [Motor rotation demo](assets/media/foc_motor_rotation_demo.mp4)
+- [12V / power validation photo](assets/media/power_validation_12v.jpg)
 
-Technical scope:
-- Isaac Sim / local RL workflow setup for bipedal locomotion.
-- Reward tuning around step clearance, torso posture, gait stability, and continuous-motion stability.
-- Short-cycle progress from environment setup to stable walking and slope traversal.
+**Validation & Engineering Metrics**
 
-Technical value:
-- Supports the robot-learning side of the application.
-- Relevant to legged locomotion, reward design, gait stabilization, and sim-to-sim / sim-to-real foundations.
+| Category | Technical Specs & Implementation |
+| :--- | :--- |
+| **Hardware Core** | SPC1168 MCU, DRV8300 gate driver, custom MOSFET power stage |
+| **Control Logic** | SVPWM, Clarke-Park transforms, FOC control workflow, current-sampling circuit design |
+| **Test Results** | Completed board-level bring-up, 12V power validation, and preliminary motor-rotation validation. Quantified RPM / load / waveform data will be added after the next validation round. |
+| **Failure Analysis** | Debugged power-stage and board-level reliability issues during bring-up, including supply-path checks, soldering inspection, interface verification, and protection-circuit review. Detailed waveform evidence is pending. |
 
-Evidence note:
-- The current screenshots are used as process evidence. The reward curves and training description should be treated as the main proof until short locomotion clips are added.
+**Technical value:** This project is the primary evidence of actuator-level hardware implementation. It shows practical experience with compact robotic actuation, current sensing, PCB layout, and embedded control loops.
 
-## 3. Field Robotics and Hardware Reliability
+---
 
-This section is supporting evidence. It shows practical embedded-system experience across robotic platforms, but should not lead the portfolio.
+## 2. Learning-Based Locomotion: Isaac Sim Bipedal Training
+
+> GIF/video evidence will be added after the next recording pass. Current evidence focuses on reward curves, environment setup, and process screenshots.
+
+![Reward curves and training logs](assets/media/reward_curve.png)
+
+![Isaac Sim training scene](assets/media/isaac_training_scene.png)
+
+Evidence:
+- [Flat walking screenshot](assets/media/isaac_flat_walking.png)
+
+**Training Configurations & Reward Tuning**
+
+- **Environment:** Isaac Sim + `tron2_rl_lab` workflow.
+- **Key Reward Terms Tuned:**
+  - **Step Clearance:** adjusted swing-foot clearance rewards to reduce low swing trajectories and foot-dragging tendency.
+  - **Torso Posture & Gait Stability:** tuned posture and balance-related terms to improve continuous walking stability.
+  - **Forward Motion / Tracking:** reviewed velocity-related reward curves and walking behavior to identify tracking instability.
+- **Next-Stage Failure Analysis:** Flat walking and slope traversal were achieved, while stair-crossing behavior still needs a staged curriculum. The current bottleneck is likely insufficient task decomposition between low-level gait stabilization and higher-level terrain progression.
+
+**Technical value:** This section supports the robot-learning side of the application: reward design, locomotion training, gait-stability analysis, and sim-to-real preparation.
+
+---
+
+## 3. Field Robotics and Hardware Reliability (Supporting Evidence)
+
+<details>
+<summary><b>Click to expand: Embedded Diagnostics, UAV Inspection, Agricultural Robotics, and Publication Evidence</b></summary>
+<br>
 
 ### Embedded Hardware Diagnostics and Board Bring-Up
 
-Evidence:
-- [Hardware diagnostics photo](hardware_debugging/embedded_hardware_diagnostics.jpg)
-- [Linux embedded platform debugging](hardware_debugging/linux_embedded_platform_debug.jpg)
-- [MCU board bring-up](hardware_debugging/mcu_board_bringup.jpg)
-
-Technical scope:
-- MCU-level boards and Linux-capable embedded platforms.
-- Board bring-up, peripheral checks, serial debugging, power-path diagnosis, and abnormal-startup isolation.
-- Use of multimeters, oscilloscopes, adjustable power supplies, load instruments, and serial tools.
-
-Technical value:
-- Useful as evidence of physical-system debugging, sensorized platform integration, and embedded control reliability.
-
-### Robotics and Agricultural Automation Projects
+![Embedded hardware diagnostics](assets/media/embedded_hardware_diagnostics.jpg)
 
 Evidence:
-- [Mountain tea garden drone system](robotics_projects/tea_garden_drone_system.jpg)
-- [Sugarcane monitoring system](robotics_projects/sugarcane_monitoring_system.png)
-- [Cabbage harvester CAN / motor-control evidence](robotics_projects/cabbage_harvester_can_motor_control.jpg)
-- [SPIE mine robot publication evidence](robotics_projects/spie_mine_robot_publication.jpg)
+- [Linux embedded platform debugging](assets/media/linux_embedded_platform_debug.jpg)
+- [MCU board bring-up](assets/media/mcu_board_bringup.jpg)
 
-Technical scope:
-- UAV hardware and power-management module.
-- Agricultural machinery monitoring, multi-sensor acquisition, and field-oriented deployment.
-- CAN communication and motor-control exposure in agricultural robotics.
-- STM32-based multi-sensor mobile robot work documented in SPIE Proceedings.
+**Key Contribution:** MCU / RK / RPi platform bring-up, serial debugging, power-path diagnosis, and board-level fault isolation using multimeters, oscilloscopes, adjustable power supplies, and load instruments.
 
-Technical value:
-- Shows breadth in real robotic systems, sensing, communication, and embedded deployment.
-- Use as background evidence after the FOC and Isaac Sim sections.
+### Sugarcane Harvester & UAV Inspection Systems
 
-## Email Usage
+![Tea garden drone system](assets/media/tea_garden_drone_system.jpg)
 
-Suggested one-line link text:
+Evidence:
+- [Sugarcane monitoring system](assets/media/sugarcane_monitoring_system.jpg)
+- [Cabbage harvester CAN / motor-control evidence](assets/media/cabbage_harvester_can_motor_control.jpg)
+- [SPIE mine robot publication evidence](assets/media/spie_mine_robot_publication.jpg)
 
-`I also organized a compact evidence brief for my FOC motor-drive board, Isaac Sim locomotion training, and embedded robotics projects: [link].`
+**Key Contribution:** Embedded flight-control logic, telemetry communication, multi-sensor acquisition, CAN communication exposure, and field-oriented robotic system deployment.
 
-Suggested reading order:
-- Actuation and Embedded Control
-- Learning-Based Locomotion
-- Field Robotics and Hardware Reliability
+**Publication:** Co-authored work related to agricultural machinery monitoring in *Chinese Agricultural Mechanization*. Third author on an SPIE Proceedings paper involving an STM32-based multi-sensor mobile robot.
+
+</details>
+
+---
+
+## Suggested Reading Order
+
+1. FOC Motor Drive Board
+2. Isaac Sim Bipedal Locomotion Training
+3. Supporting field robotics and hardware diagnostics
