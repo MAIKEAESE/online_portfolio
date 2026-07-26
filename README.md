@@ -6,7 +6,7 @@
 ### Core Proof Points
 
 - **Low-level Actuation:** Designed and validated a PCB-level FOC motor-drive board using SPC1168, DRV8300, MOSFET power stage, and SVPWM-based control workflow.
-- **RL & Sim-to-Real:** Deployed bipedal locomotion training in Isaac Sim, tuning reward functions toward stable walking and slope traversal within a compressed project cycle.
+- **Robot Learning Workflows:** Explored both LeRobot-style manipulation training and TRON2 bipedal locomotion training, with emphasis on RL / IL workflow setup, reward tuning, and simulation-based debugging.
 - **Hardware Reliability:** Hands-on experience in MCU / RK / RPi platform bring-up, power-path diagnosis, serial debugging, and board-level signal troubleshooting.
 
 ---
@@ -34,7 +34,7 @@ Evidence:
 
 ---
 
-## 2. Learning-Based Locomotion: Isaac Sim Bipedal Training
+## 2. Robot Learning Workflows: LeRobot Manipulation and TRON2 Bipedal Training
 
 > GIF/video evidence will be added after the next recording pass. Current evidence focuses on reward curves, environment setup, and process screenshots.
 
@@ -42,19 +42,30 @@ Evidence:
 
 ![Isaac Sim training scene](assets/media/isaac_training_scene.png)
 
-Evidence:
+Shared evidence:
 - [Flat walking screenshot](assets/media/isaac_flat_walking.png)
 
-**Training Configurations & Reward Tuning**
+### 2.1 LeRobot Manipulation Training
 
+Technical scope:
+- Explored LeRobot-style reinforcement learning and imitation learning workflows for robotic manipulation tasks.
+- Focused on understanding policy-training structure, task setup, environment configuration, and data / demonstration flow.
+- Built workflow-level familiarity that can transfer to future sim-to-real manipulation or embodied AI projects.
+
+Current evidence:
+- The current repository does not yet include a polished LeRobot manipulation demo. This part is documented as workflow exploration and learning progress rather than final demo evidence.
+
+### 2.2 TRON2 Bipedal Locomotion Training
+
+Technical scope:
 - **Environment:** Isaac Sim + `tron2_rl_lab` workflow.
-- **Key Reward Terms Tuned:**
+- **Reward terms tuned:**
   - **Step Clearance:** adjusted swing-foot clearance rewards to reduce low swing trajectories and foot-dragging tendency.
   - **Torso Posture & Gait Stability:** tuned posture and balance-related terms to improve continuous walking stability.
   - **Forward Motion / Tracking:** reviewed velocity-related reward curves and walking behavior to identify tracking instability.
-- **Next-Stage Failure Analysis:** Flat walking and slope traversal were achieved, while stair-crossing behavior still needs a staged curriculum. The current bottleneck is likely insufficient task decomposition between low-level gait stabilization and higher-level terrain progression.
+- **Next-stage failure analysis:** Flat walking and slope traversal were achieved, while stair-crossing behavior still needs a staged curriculum. The current bottleneck is likely insufficient task decomposition between low-level gait stabilization and higher-level terrain progression.
 
-**Technical value:** This section supports the robot-learning side of the application: reward design, locomotion training, gait-stability analysis, and sim-to-real preparation.
+**Technical value:** This section supports the robot-learning side of the portfolio from two angles: manipulation workflow literacy through LeRobot-style training, and locomotion-specific reward design through TRON2 / Isaac Sim bipedal training.
 
 ---
 
@@ -94,5 +105,5 @@ Evidence:
 ## Suggested Reading Order
 
 1. FOC Motor Drive Board
-2. Isaac Sim Bipedal Locomotion Training
+2. Robot Learning Workflows
 3. Supporting field robotics and hardware diagnostics
