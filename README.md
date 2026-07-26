@@ -1,8 +1,8 @@
 # Jiang Jiawei Research Evidence Brief
 
-Focus: wearable exoskeletons, embedded robotic actuation, and learning-based locomotion.
+Focus: embedded robotic actuation, board-level hardware implementation, and learning-based locomotion.
 
-This page is a compact evidence index for MPhil advisor outreach. It is not a full project report. The strongest evidence is listed first.
+This page is a compact evidence index for research-oriented graduate outreach. It is not a full project report. The strongest evidence is listed first.
 
 ## 1. Actuation and Embedded Control
 
@@ -20,9 +20,9 @@ Technical scope:
 - FOC control workflow involving SVPWM and Clarke-Park transforms.
 - Preliminary motor-rotation and power validation.
 
-Research relevance:
-- Relevant to compact joint actuation, current sensing, embedded control loops, and actuator-level reliability in wearable robotics / exoskeleton systems.
-- This is the strongest hardware evidence in the portfolio and should be the first section shown to mechatronics, wearable robotics, or exoskeleton advisors.
+Technical value:
+- Demonstrates hands-on experience with compact actuation hardware, current sensing, embedded control loops, and actuator-level reliability.
+- This is the strongest hardware evidence in the portfolio and should be viewed as the main proof of low-level robotic actuation capability.
 
 ## 2. Learning-Based Locomotion
 
@@ -38,16 +38,16 @@ Technical scope:
 - Reward tuning around step clearance, torso posture, gait stability, and continuous-motion stability.
 - Short-cycle progress from environment setup to stable walking and slope traversal.
 
-Research relevance:
+Technical value:
 - Supports the robot-learning side of the application.
-- Relevant to legged locomotion, reward design, gait stabilization, sim-to-sim / sim-to-real foundations, and future exoskeleton control research.
+- Relevant to legged locomotion, reward design, gait stabilization, and sim-to-sim / sim-to-real foundations.
 
 Evidence note:
 - The current screenshots are used as process evidence. The reward curves and training description should be treated as the main proof until short locomotion clips are added.
 
 ## 3. Field Robotics and Hardware Reliability
 
-This section is supporting evidence. It shows practical embedded-system experience across robotic platforms, but should not lead the portfolio for exoskeleton advisors.
+This section is supporting evidence. It shows practical embedded-system experience across robotic platforms, but should not lead the portfolio.
 
 ### Embedded Hardware Diagnostics and Board Bring-Up
 
@@ -61,8 +61,8 @@ Technical scope:
 - Board bring-up, peripheral checks, serial debugging, power-path diagnosis, and abnormal-startup isolation.
 - Use of multimeters, oscilloscopes, adjustable power supplies, load instruments, and serial tools.
 
-Research relevance:
-- Useful for labs that build physical wearable robots, sensorized platforms, and embedded control systems.
+Technical value:
+- Useful as evidence of physical-system debugging, sensorized platform integration, and embedded control reliability.
 
 ### Robotics and Agricultural Automation Projects
 
@@ -78,20 +78,17 @@ Technical scope:
 - CAN communication and motor-control exposure in agricultural robotics.
 - STM32-based multi-sensor mobile robot work documented in SPIE Proceedings.
 
-Research relevance:
+Technical value:
 - Shows breadth in real robotic systems, sensing, communication, and embedded deployment.
 - Use as background evidence after the FOC and Isaac Sim sections.
 
-## Advisor Email Usage
+## Email Usage
 
 Suggested one-line link text:
 
 `I also organized a compact evidence brief for my FOC motor-drive board, Isaac Sim locomotion training, and embedded robotics projects: [link].`
 
-For exoskeleton / rehabilitation robotics advisors, point first to:
+Suggested reading order:
 - Actuation and Embedded Control
 - Learning-Based Locomotion
-
-For mechatronics / embedded robotics advisors, point first to:
-- Actuation and Embedded Control
 - Field Robotics and Hardware Reliability
