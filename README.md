@@ -69,7 +69,23 @@ Technical scope:
 
 ---
 
-## 3. Field Robotics and Hardware Reliability (Supporting Evidence)
+## 3. RoboMaster Robotics: Electrical Integration and Field Debugging
+
+![RM power distribution and control board bring-up](assets/media/rm_power_distribution_board.jpg)
+
+![RM robot chassis module](assets/media/rm_robot_chassis_module.jpg)
+
+Evidence:
+- [RM spare control boards and replacement modules](assets/media/rm_spare_control_boards.jpg)
+- [RM wearable operator interface prototype](assets/media/rm_wearable_operator_interface.jpg)
+
+**Key Contribution:** Participated in robot electrical integration, control-board replacement, power-distribution checks, and on-site hardware debugging for a competition robot platform.
+
+**Technical value:** This evidence supports practical reliability under deadline pressure: board-level bring-up, connector / power-path troubleshooting, CAN / UART-oriented module integration, and rapid diagnosis when the robot system had to remain operational.
+
+---
+
+## 4. Field Robotics and Hardware Reliability (Supporting Evidence)
 
 <details>
 <summary><b>Click to expand: Embedded Diagnostics, UAV Inspection, Agricultural Robotics, and Publication Evidence</b></summary>
@@ -84,20 +100,6 @@ Evidence:
 - [MCU board bring-up](assets/media/mcu_board_bringup.jpg)
 
 **Key Contribution:** MCU / RK / RPi platform bring-up, serial debugging, power-path diagnosis, and board-level fault isolation using multimeters, oscilloscopes, adjustable power supplies, and load instruments.
-
-### RoboMaster Robotics: Electrical Integration and Field Debugging
-
-![RM power distribution and control board bring-up](assets/media/rm_power_distribution_board.jpg)
-
-![RM robot chassis module](assets/media/rm_robot_chassis_module.jpg)
-
-Evidence:
-- [RM spare control boards and replacement modules](assets/media/rm_spare_control_boards.jpg)
-- [RM wearable operator interface prototype](assets/media/rm_wearable_operator_interface.jpg)
-
-**Key Contribution:** Participated in robot electrical integration, control-board replacement, power-distribution checks, and on-site hardware debugging for a competition robot platform.
-
-**Technical value:** This evidence supports practical reliability under deadline pressure: board-level bring-up, connector / power-path troubleshooting, CAN / UART-oriented module integration, and rapid diagnosis when the robot system had to remain operational.
 
 ### Sugarcane Harvester & UAV Inspection Systems
 
@@ -120,4 +122,5 @@ Evidence:
 
 1. FOC Motor Drive Board
 2. Robot Learning Workflows
-3. Supporting field robotics and hardware diagnostics
+3. RoboMaster electrical integration and field debugging
+4. Supporting field robotics and hardware diagnostics
