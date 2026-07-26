@@ -27,16 +27,14 @@ Evidence:
 | :--- | :--- |
 | **Hardware Core** | SPC1168 MCU, DRV8300 gate driver, custom MOSFET power stage |
 | **Control Logic** | SVPWM, Clarke-Park transforms, FOC control workflow, current-sampling circuit design |
-| **Test Results** | Completed board-level bring-up, 12V power validation, and preliminary motor-rotation validation. Quantified RPM / load / waveform data will be added after the next validation round. |
-| **Failure Analysis** | Debugged power-stage and board-level reliability issues during bring-up, including supply-path checks, soldering inspection, interface verification, and protection-circuit review. Detailed waveform evidence is pending. |
+| **Test Results** | Completed board-level bring-up, 12V power validation, and preliminary motor-rotation validation. |
+| **Failure Analysis** | Debugged power-stage and board-level reliability issues during bring-up, including supply-path checks, soldering inspection, interface verification, and protection-circuit review. |
 
 **Technical value:** This project is the primary evidence of actuator-level hardware implementation. It shows practical experience with compact robotic actuation, current sensing, PCB layout, and embedded control loops.
 
 ---
 
 ## 2. Robot Learning Workflows: LeRobot Manipulation and TRON2 Bipedal Training
-
-> GIF/video evidence will be added after the next recording pass. Current evidence focuses on reward curves, environment setup, and process screenshots.
 
 ![Reward curves and training logs](assets/media/reward_curve.png)
 
@@ -51,9 +49,6 @@ Technical scope:
 - Explored LeRobot-style reinforcement learning and imitation learning workflows for robotic manipulation tasks.
 - Focused on understanding policy-training structure, task setup, environment configuration, and data / demonstration flow.
 - Built workflow-level familiarity that can transfer to future sim-to-real manipulation or embodied AI projects.
-
-Current evidence:
-- The current repository does not yet include a polished LeRobot manipulation demo. This part is documented as workflow exploration and learning progress rather than final demo evidence.
 
 ### 2.2 TRON2 Bipedal Locomotion Training
 
@@ -115,12 +110,3 @@ Evidence:
 **Publication:** Co-authored work related to agricultural machinery monitoring in *Chinese Agricultural Mechanization*. Third author on an SPIE Proceedings paper involving an STM32-based multi-sensor mobile robot.
 
 </details>
-
----
-
-## Suggested Reading Order
-
-1. FOC Motor Drive Board
-2. Robot Learning Workflows
-3. RoboMaster electrical integration and field debugging
-4. Supporting field robotics and hardware diagnostics
