@@ -20,6 +20,7 @@
 Evidence:
 - [Motor rotation demo](assets/media/foc_motor_rotation_demo.mp4)
 - [12V / power validation photo](assets/media/power_validation_12v.jpg)
+- [Technical memo: FOC Motor Drive for Robotic Actuation](project_memos/FOC_Motor_Drive_for_Robotic_Actuation.md)
 
 **Validation & Engineering Metrics**
 
@@ -27,7 +28,7 @@ Evidence:
 | :--- | :--- |
 | **Hardware Core** | SPC1168 MCU, DRV8300 gate driver, custom MOSFET power stage |
 | **Control Logic** | SVPWM, Clarke-Park transforms, FOC control workflow, current-sampling circuit design |
-| **Test Results** | Completed board-level bring-up, 12V power validation, and preliminary motor-rotation validation. |
+| **Test Results** | Completed board-level bring-up, preliminary motor-rotation validation, and measured multi-rail power validation: 12.00V -> 11.97V, 10.50V -> 10.40V, 5.00V -> 4.97V, 3.30V -> 3.31V. |
 | **Failure Analysis** | Debugged power-stage and board-level reliability issues during bring-up, including supply-path checks, soldering inspection, interface verification, and protection-circuit review. |
 
 **Technical value:** This project is the primary evidence of actuator-level hardware implementation. It shows practical experience with compact robotic actuation, current sensing, PCB layout, and embedded control loops.
