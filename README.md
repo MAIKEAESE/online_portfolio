@@ -22,10 +22,6 @@
       <img src="assets/media/foc_board_photo_readme.jpg" alt="FOC physical board" width="100%">
     </td>
   </tr>
-  <tr>
-    <td align="center"><sub>PCB layout</sub></td>
-    <td align="center"><sub>Physical board</sub></td>
-  </tr>
 </table>
 
 Evidence:
@@ -86,10 +82,6 @@ Technical scope:
     <td width="50%">
       <img src="assets/media/rm_robot_chassis_module_readme.jpg" alt="RM robot chassis module" width="100%">
     </td>
-  </tr>
-  <tr>
-    <td align="center"><sub>Power distribution and control board bring-up</sub></td>
-    <td align="center"><sub>Robot chassis module</sub></td>
   </tr>
 </table>
 
