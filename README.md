@@ -28,7 +28,7 @@ Evidence:
 | :--- | :--- |
 | **Hardware Core** | SPC1168 MCU, DRV8300 gate driver, custom MOSFET power stage |
 | **Control Logic** | SVPWM, Clarke-Park transforms, FOC control workflow, current-sampling circuit design |
-| **Test Results** | Completed board-level bring-up, preliminary motor-rotation validation, and measured multi-rail power validation: 12.00V -> 11.97V, 10.50V -> 10.40V, 5.00V -> 4.97V, 3.30V -> 3.31V. |
+| **Test Results** | Completed board-level bring-up, preliminary motor-rotation validation, and multi-rail power validation with sub-1% measured error. |
 | **Failure Analysis** | Debugged power-stage and board-level reliability issues during bring-up, including supply-path checks, soldering inspection, interface verification, and protection-circuit review. |
 
 **Technical value:** This project is the primary evidence of actuator-level hardware implementation. It shows practical experience with compact robotic actuation, current sensing, PCB layout, and embedded control loops.
