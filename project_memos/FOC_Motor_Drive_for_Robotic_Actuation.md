@@ -50,3 +50,4 @@ The project strengthened three practical skills that are directly relevant to ro
 - **Board-level bring-up:** checking the power path, soldering quality, connector mapping, and driver-interface behavior before running control code.
 - **Feedback-chain reasoning:** understanding how encoder alignment and current sampling affect FOC stability.
 - **System-level risk control:** validating hardware layers in sequence instead of jumping directly to closed-loop control.
+- **Sim-to-real awareness:** understanding physical actuator limits such as power delivery, encoder latency, and phase alignment helps define more realistic torque penalties and motor-model constraints in Isaac Sim reinforcement learning environments.
