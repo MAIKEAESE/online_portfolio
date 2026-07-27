@@ -13,9 +13,20 @@
 
 ## 1. Actuation and Embedded Control: FOC Motor Drive Board
 
-![FOC PCB layout](assets/media/foc_pcb_layout.jpg)
-
-![FOC physical board](assets/media/foc_board_photo.jpg)
+<table>
+  <tr>
+    <td width="50%">
+      <img src="assets/media/foc_pcb_layout_readme.jpg" alt="FOC PCB layout" width="100%">
+    </td>
+    <td width="50%">
+      <img src="assets/media/foc_board_photo_readme.jpg" alt="FOC physical board" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><sub>PCB layout</sub></td>
+    <td align="center"><sub>Physical board</sub></td>
+  </tr>
+</table>
 
 Evidence:
 - [Motor rotation demo](assets/media/foc_motor_rotation_demo.mp4)
@@ -67,9 +78,20 @@ Technical scope:
 
 ## 3. RoboMaster Robotics: Electrical Integration and Field Debugging
 
-![RM power distribution and control board bring-up](assets/media/rm_power_distribution_board.jpg)
-
-![RM robot chassis module](assets/media/rm_robot_chassis_module.jpg)
+<table>
+  <tr>
+    <td width="50%">
+      <img src="assets/media/rm_power_distribution_board_readme.jpg" alt="RM power distribution and control board bring-up" width="100%">
+    </td>
+    <td width="50%">
+      <img src="assets/media/rm_robot_chassis_module_readme.jpg" alt="RM robot chassis module" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Power distribution and control board bring-up</sub></td>
+    <td align="center"><sub>Robot chassis module</sub></td>
+  </tr>
+</table>
 
 Evidence:
 - [RM spare control boards and replacement modules](assets/media/rm_spare_control_boards.jpg)
